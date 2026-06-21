@@ -32,8 +32,8 @@ O objetivo é simular um backend moderno, escalável e desacoplado, seguindo pad
 ## 📁 Estrutura do Projeto
 
 azure-serverless-labs/
-│
-├── fn-input-blob/
+|
+|-- fn-input-blob/
 │   └── BlobProcessorFunction.cs
 │
 ├── fn-ler-sb/
