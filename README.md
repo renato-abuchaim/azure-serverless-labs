@@ -33,14 +33,22 @@ O objetivo é simular um backend moderno, escalável e desacoplado, seguindo pad
 
 azure-serverless-labs/
 │
-├── fn-input-blob/ → Processamento de arquivos do Blob Storage
-├── fn-ler-sb/ → Consumo de mensagens do Service Bus
-├── fn-save-sql/ → Persistência no Azure SQL Database
-├── fn-simples/ → Endpoint HTTP básico
-├── fn-tempo/ → Execução agendada (Timer Trigger)
+├── fn-input-blob/
+│   └── BlobProcessorFunction.cs
+│
+├── fn-ler-sb/
+│   └── ServiceBusConsumerFunction.cs
+│
+├── fn-save-sql/
+│   └── SqlPersistenceFunction.cs
+│
+├── fn-simples/
+│   └── HttpTriggerFunction.cs
+│
+├── fn-tempo/
+│   └── ScheduledTaskFunction.cs
+│
 └── host.json
-
-
 ---
 
 ## ⚙️ Funções
