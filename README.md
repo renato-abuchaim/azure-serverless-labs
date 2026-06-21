@@ -33,27 +33,12 @@ O objetivo é simular um backend moderno, escalável e desacoplado, seguindo pad
 
 azure-serverless-labs/
 |
-|-- fn-input-blob/
-│   └── BlobProcessorFunction.cs
-│
-├── fn-ler-sb/
-│   └── ServiceBusConsumerFunction.cs
-│
-├── fn-save-sql/
-│   └── SqlPersistenceFunction.cs
-│
-├── fn-simples/
-│   └── HttpTriggerFunction.cs
-│
-├── fn-tempo/
-│   └── ScheduledTaskFunction.cs
-│
-└── host.json
+
 ---
 
 ## ⚙️ Funções
 
-### 🟦 fn-input-blob
+### 🟦 BlobProcessorFunction.cs (fn-input-blob)
 Executada automaticamente ao detectar upload no Azure Blob Storage.
 
 - Processa arquivos enviados
@@ -62,7 +47,7 @@ Executada automaticamente ao detectar upload no Azure Blob Storage.
 
 ---
 
-### 🟨 fn-ler-sb
+### 🟨 ServiceBusConsumerFunction.cs (fn-ler-sb)
 Responsável por consumir mensagens do Azure Service Bus.
 
 - Processamento assíncrono
@@ -71,7 +56,7 @@ Responsável por consumir mensagens do Azure Service Bus.
 
 ---
 
-### 🟩 fn-save-sql
+### 🟩 SqlPersistenceFunction.cs (fn-save-sql)
 Persistência de dados no Azure SQL Database.
 
 - Inserção de dados estruturados
@@ -80,7 +65,7 @@ Persistência de dados no Azure SQL Database.
 
 ---
 
-### 🟪 fn-simples
+### 🟪 HttpTriggerFunction.cs (fn-simples)
 Função HTTP básica para testes.
 
 - Health check da aplicação
@@ -89,7 +74,7 @@ Função HTTP básica para testes.
 
 ---
 
-### 🟥 fn-tempo
+### 🟥 ScheduledTaskFunction.cs (fn-tempo)
 Função executada automaticamente por agendamento.
 
 - Jobs automáticos
