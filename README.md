@@ -18,6 +18,28 @@ O objetivo é simular um backend moderno, escalável e desacoplado, seguindo pad
 
 ## 🧠 Arquitetura do Sistema
 
+    HTTP Request
+          │
+          ▼
+  fn-simples (HTTP Trigger)
+          │
+
+┌──────────┴──────────┐
+▼ ▼
+fn-input-blob fn-save-sql
+(Blob Trigger) (SQL Database)
+│ ▲
+▼ │
+Azure Blob Storage │
+│
+Azure Service Bus
+│
+▼
+fn-ler-sb
+
+    fn-tempo (Timer Trigger)
+    executa em intervalos
+    
 ---
 
 ## ⚙️ Stack Tecnológica
